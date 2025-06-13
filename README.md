@@ -77,10 +77,10 @@
 
 | 實驗條件 | 模型 | 是否使用知識 | 輸入資料 |
 |----------|------|--------------|----------|
-| Zero-shot | LLaMA-7B、Mistral-7B | ✗ | Title, Author, Publisher, ISBN...等 |
+| Zero-shot | LLaMA-7B、Mistral-7B | ✗ | Title, Author, Publisher, ISBN...等 + Prompt template |
 | Few-shot | LLaMA-7B、Mistral-7B | △ | Title, Author, Publisher, ISBN...等 + Prompt template |
-| RAG 增強 | LLaMA-7B、Mistral-7B | ✓（過去編目資料） | Title, Author, Publisher, ISBN...等 + RAG 查詢 |
-| IR + LLM | BM25 + LLaMA-7B、Mistral-7B | ✓（過去編目資料） | Title, Author, Publisher, ISBN...等 + RAG 查詢 |
+| RAG 增強 | LLaMA-7B、Mistral-7B | ✓（過去編目資料） | Title, Author, Publisher, ISBN...等 + Prompt template + RAG 查詢 |
+| IR + LLM | BM25 + LLaMA-7B、Mistral-7B | ✓（過去編目資料） | Title, Author, Publisher, ISBN...等 + Prompt template + RAG 查詢 |
 
 - 評估指標：
   - 分類號：Micro-F1
