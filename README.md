@@ -22,7 +22,6 @@
   - A: 本地 LLM 模型（如 LLaMA、Mistral）+ Zero-shot Prompt template 推薦
   - B: 本地 LLM 模型（如 LLaMA、Mistral）+ Few-shot Prompt template 推薦
   - C: Fine-tuning 過的本地 LLM + RAG 強化分類推薦
-  - D: BM25 + Fine-tuning 過的本地 LLM + RAG 強化分類推薦
 
 - **指標**：
   - 分類號使用 Micro-F1
@@ -80,7 +79,6 @@
 | Zero-shot | LLaMA-7B、Mistral-7B | ✗ | Title, Author, Publisher, ISBN...等 + Prompt template |
 | Few-shot | LLaMA-7B、Mistral-7B | △ | Title, Author, Publisher, ISBN...等 + Prompt template |
 | RAG 增強 | LLaMA-7B、Mistral-7B | ✓（過去編目資料） | Title, Author, Publisher, ISBN...等 + Prompt template + RAG 查詢 |
-| IR + LLM | BM25 + LLaMA-7B、Mistral-7B | ✓（過去編目資料） | Title, Author, Publisher, ISBN...等 + Prompt template + RAG 查詢 |
 
 - 評估指標：
   - 分類號：Micro-F1
